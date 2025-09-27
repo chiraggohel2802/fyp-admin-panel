@@ -8,6 +8,7 @@ import { useGetStatus } from 'hooks/useGetStatus';
 const columnFields = [
   { key: 'sequence', title: THERAPIST.FORM.SEQUENCE_LABEL },
   { key: 'isTopTherapist', title: THERAPIST.FORM.STATUS_LABEL },
+  { key: 'isVerified', title: THERAPIST.FORM.IS_VERIFIED_LABEL },
   { key: 'userFullName', title: THERAPIST.FORM.USER_FULL_NAME_LABEL },
   { key: 'username', title: THERAPIST.FORM.USER_NAME_LABEL },
   { key: 'designation', title: THERAPIST.FORM.DESIGNATION_LABEL },
@@ -47,6 +48,12 @@ export default function useRowCols(data, refetchList) {
     return {
       id: item.id,
       userFullName: `${item.firstName || ''} ${item.lastName || ''}`.trim(),
+      isVerified: (
+        <StatusBadge
+          badge={item.partnerMeta?.isVerified ? 'Success' : 'Danger'}
+          label={item.partnerMeta?.isVerified ? 'Verified' : 'Unverified'}
+        />
+      ),
       username: item.partnerMeta?.username || '',
       designation: item.partnerMeta?.designation || '',
       qualification: item.partnerMeta?.qualification || '',

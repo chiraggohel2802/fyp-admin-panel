@@ -30,7 +30,7 @@ export const THERAPIST = {
     RATING_LABEL: 'Rating',
     RATING_PLACEHOLDER: 'Enter Rating',
     SPECIALISATION_LABEL: 'Specialisation',
-    STATUS_LABEL: 'Status',
+    STATUS_LABEL: 'Top Therapist Status',
     INTRO_VIDEO_LABEL: 'Intro Video (Youtube ID)',
     INTRO_VIDEO_PLACEHOLDER: 'Enter Intro Video URL',
     REVIEW_COUNT_LABEL: 'Review Count',

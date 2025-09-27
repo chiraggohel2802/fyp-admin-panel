@@ -49,9 +49,9 @@ export default function useFormSubmit() {
    */
   const handleFormSubmit = async (values) => {
      const image =
-      values.profilePic instanceof File
-        ? await fileToBase64(values.profilePic)
-        : values.profilePic;
+      values.profile instanceof File
+        ? await fileToBase64(values.profile)
+        : values.profile;
     return editRoleMutate.mutateAsync({
       ...values,
       profile: image,
