@@ -1,0 +1,7 @@
+.fieldLabel {
+  color: var(--color-gray-600, #4b5563);
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 0.25rem;
+}

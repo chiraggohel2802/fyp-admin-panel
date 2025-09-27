@@ -1,0 +1,34 @@
+.custom-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: color 0.3s;
+  color: var(--black-100, #111);
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+}
+
+.custom-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.custom-checkmark {
+  height: 1.563rem;
+  width: 1.563rem;
+  border-radius: 0.375rem;
+  border: 0.094rem solid var(--default-theme-color);
+  transition: background 0.3s;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.custom-checkbox input:checked + .custom-checkmark {
+  background: url('../../../assets/icons/tick.svg');
+  background-position: center center;
+  background-color: var(--default-theme-color);
+}

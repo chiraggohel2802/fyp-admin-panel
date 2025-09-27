@@ -1,0 +1,32 @@
+.container404 {
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  height: 100dvh;
+  gap: 1rem;
+  width: 75vw;
+  margin: auto;
+}
+
+.container404 .icon {
+  width: 14rem;
+  height: 14rem;
+}
+
+.container404 .text {
+  color: var(--black, #000);
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: justify;
+}
+
+.container404 .link {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  color: var(--default-theme-color);
+}

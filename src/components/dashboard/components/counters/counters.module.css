@@ -1,0 +1,53 @@
+.container {
+  background: #fff;
+  -webkit-box-shadow: 0 0 0.813rem 0 rgba(82, 63, 105, 0.05);
+  box-shadow: 0 0 0.813rem 0 rgba(82, 63, 105, 0.05);
+  margin-bottom: 1.875rem;
+  border-radius: var(--default-radius);
+  border: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+}
+
+.container .body {
+  position: relative;
+  padding: 1.5rem;
+  flex: 1 1 auto;
+}
+
+.container .body .dashWidgetHeader {
+  align-items: center;
+  display: flex;
+}
+
+.container .body .dashWidgetHeader .dashWidgetIcon {
+  align-items: center;
+  border-radius: 0.625rem;
+  /* color: #fff; */
+  display: inline-flex;
+  font-size: 1.875rem;
+  height: 4rem;
+  justify-content: center;
+  text-align: center;
+  width: 4rem;
+}
+
+.container .body .dashCount {
+  font-size: 1.125rem;
+  margin-left: 0.9375rem;
+  padding-top: 0.3125rem;
+}
+
+.container .body .dashCount .dashTitle {
+  font-size: 0.9375rem;
+  font-weight: 600;
+}
+
+.container .body .dashCount .dashCounts {
+  font-size: 1.125rem;
+}

@@ -1,0 +1,126 @@
+.cardRow {
+  display: flex;
+  flex-wrap: wrap;
+  background: #fff;
+  padding: 1.2rem;
+  border-radius: 0.325rem;
+}
+
+.formGroupItem {
+  border-bottom: 0.063rem solid #efefef;
+  margin: 0 0 1.875rem 0;
+  padding: 0 0 1.25rem 0;
+  font-size: 100%;
+  width: 100%;
+}
+
+.formTitle {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #28084b;
+  margin: 0 0 1.563rem 0;
+  line-height: 1.2;
+}
+
+.formGridGroup {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.formGroup {
+  width: 49%;
+  margin: 0 0 1.25rem 0;
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: #282828;
+}
+
+.formGroupInputSuffixStyle {
+  height: 2.5rem;
+}
+
+.formGroupInput {
+  border: 0.063rem solid #e0e0e0;
+  box-shadow: none;
+  border-radius: 0.25rem;
+  margin: 0;
+  padding: 0.625rem;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #878a99;
+  display: block;
+  width: 100%;
+  height: 2.5rem !important;
+}
+
+.formGroupInput:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: none !important;
+  outline: 0;
+  box-shadow: none !important;
+}
+
+.formGroupInput::placeholder {
+  color: #6c757d;
+  opacity: 1;
+}
+
+.buttonGroup {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.625rem;
+  align-items: center;
+  width: 100%;
+}
+
+.cancelButton {
+  color: #939393;
+  border: 0.063rem solid #939393;
+  background: #fff;
+  box-shadow: inset 0 0 0 0 #939393;
+  border-radius: 0.375rem;
+  margin: 0 0.75rem 0 0;
+}
+
+.cancelButton:hover {
+  color: #fff;
+  background: #939393;
+  border-color: #939393;
+  box-shadow: inset 0 3.125rem 0 0 #939393;
+}
+
+.paddingTop {
+  padding-top: 0.375rem !important;
+}
+
+.paddingTopMobile {
+  padding-top: 1.25rem !important;
+}
+
+.radioButtonManger {
+  padding-top: 0.375rem !important;
+  display: flex;
+}
+
+.radioButtonManger input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+
+  border: 0.125rem solid var(--default-theme-color, #4338ca);
+  transition: 0.2s all linear;
+  margin-right: 0.313rem;
+
+  position: relative;
+}
+
+.radioButtonManger input:checked {
+  border: 0.375rem solid var(--default-theme-color, #4338ca);
+  outline: unset !important; /* I added this one for Edge (chromium) support */
+}

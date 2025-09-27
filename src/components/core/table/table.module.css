@@ -1,0 +1,190 @@
+/* table.module.css */
+:root {
+  --default-table-width: calc(100vw - var(--sidebar-width) - 6rem);
+}
+
+.tableContainer {
+  width: var(--default-table-width);
+  overflow-x: auto;
+  background-color: var(--pure-white, #fff);
+  border-radius: var(--default-radius);
+  border: 0.063rem solid var(--gray-200, #e5e7eb);
+}
+
+.scrollableTable {
+  overflow-y: auto;
+  max-height: 70dvh;
+}
+
+/* Table */
+.table {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+}
+
+/* Table Header */
+.table thead tr th {
+  padding: 1rem 0.75rem;
+  white-space: nowrap;
+  position: sticky;
+  top: 0;
+  /* Ensure it appears above other elements */
+  background: var(--default-theme-color-200, #e0e7ff);
+  color: var(--black, #000);
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.00625rem;
+  border-bottom: 0.063rem solid var(--gray-200, #e5e7eb);
+  text-align: start;
+}
+
+.table thead th:not(:last-child):before {
+  position: absolute;
+  top: 50%;
+  inset-inline-end: 0;
+  width: 0.063rem;
+  height: 1.6em;
+  background-color: var(--default-theme-color, #4338ca);
+  transform: translateY(-50%);
+  transition: background-color 0.2s;
+  content: '';
+}
+
+.blackAndWhite .table thead th {
+  background: var(--gray-150, #f4f5f8);
+  color: var(--gray-500, #6b7280);
+  font-weight: 500;
+}
+
+/* common properties of table body */
+.table tbody td {
+  color: var(--black-200, #212121);
+  /* white-space: nowrap; */
+  font-size: 0.75rem;
+  font-weight: 400;
+  padding: 1rem 0.75rem;
+  border-bottom: 0.063rem solid var(--gray-200, #e5e7eb);
+  max-width: 20rem;
+  overflow-wrap: break-word;
+  text-wrap: balance;
+}
+
+.blackAndWhite .table tbody td {
+  color: var(--black-100, #111);
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  border-right: 0.063rem solid var(--gray-200, #e5e7eb);
+  border-bottom: 0.063rem solid var(--gray-200, #e5e7eb);
+  background: var(--pure-white, #fff);
+  padding: 0.625rem 1rem;
+  overflow-wrap: break-word;
+  /* white-space: break-spaces; */
+}
+
+/* table footer */
+.tableContainer .footer {
+  font-size: 0.75rem;
+  font-weight: 400;
+  padding: 0.3rem 1.5rem;
+  z-index: 2;
+  background: var(--default-theme-color-200, #e0e7ff);
+  border-radius: 0 0 0.625rem 0.625rem;
+  border-top: 0.063rem solid var(--gray-200, #e5e7eb);
+  display: flex;
+  justify-content: end;
+}
+
+.tableContainer .footer .contentBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: 1rem;
+  color: var(--black-200, #212121);
+  font-weight: 500;
+}
+
+.tableContainer .footer .contentBox .arrows {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.tableContainer .footer .contentBox .arrows > button {
+  border: none;
+  background: transparent;
+}
+
+.tableContainer .footer .contentBox .arrows > button:disabled {
+  cursor: not-allowed;
+  color: var(--default-theme-color-500);
+}
+
+/* -- Fixed Column -- */
+/* action column heading */
+.table thead tr th.fixedActionsColumnHeader {
+  position: sticky;
+  left: 0;
+  z-index: 2;
+  min-width: 6rem;
+  text-align: center;
+}
+
+/* action cells */
+.fixedActionsColumn {
+  position: sticky;
+  left: 0;
+  min-width: 6rem;
+  background: var(--pure-white, #fff);
+  border-right: 0.063rem solid var(--gray-200, #e5e7eb);
+}
+
+.fixedActionsColumn .buttonsBox {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.buttonsBox > button {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+}
+
+/* -- Scrollbar -- */
+.scrollableTable::-webkit-scrollbar {
+  height: 0.313rem;
+  width: 0.313rem;
+}
+
+/* -- Responsiveness -- */
+@media (width <=768px) {
+  .tableContainer {
+    width: calc(100vw - 3rem);
+  }
+}
+
+/* variant == 'blackAndWhite' */
+.footerBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footerBox .paginationBox {
+  display: flex;
+  align-items: center;
+  gap: 1.125rem;
+}
+
+.footerBox .text {
+  color: var(--gray-500, #6b7280);
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.tooltipAction {
+  position: fixed;
+}

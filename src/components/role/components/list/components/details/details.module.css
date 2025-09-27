@@ -1,0 +1,54 @@
+.dataRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 1.25rem;
+}
+
+.dataRowDataRow {
+  width: 45%;
+}
+
+.dataRowDataRowLabel {
+  font-weight: 500;
+  font-size: 1rem;
+  display: block;
+}
+
+.dataRowDataRowValue {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #878a99;
+}
+
+.permissionRow {
+  width: 100%;
+}
+
+.permissionClass {
+  border: 0.063rem solid #e0e7ff;
+  padding: 0.063rem 0.313rem;
+  border-radius: 0.313rem;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.disactiveClass {
+  width: 6.25rem;
+  padding: 0.313rem;
+  border-radius: 0.25rem;
+  color: #f06548;
+  background-color: rgba(240, 101, 72, 0.1);
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.activeClass {
+  text-transform: capitalize;
+  width: 6.25rem;
+  padding: 0.313rem;
+  border-radius: 0.25rem;
+  text-align: center;
+  color: #0ab39c;
+  background-color: rgba(10, 179, 156, 0.1);
+}

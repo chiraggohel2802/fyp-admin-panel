@@ -1,0 +1,67 @@
+.imageUploadContainer {
+  display: flex;
+  align-items: center;
+}
+
+.imageUploadLabel {
+  display: inline-block;
+  padding: 0.313rem 0.625rem;
+  border: 0.125rem solid var(--default-theme-color, #4338ca);
+  border-radius: 0.25rem;
+  background-color: var(--default-theme-color, #4338ca);
+  color: white;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+  margin-left: 1.5rem;
+}
+
+.imageUploadLabel:hover {
+  background-color: var(--default-theme-color, #4338ca);
+  border-color: var(--default-theme-color, #4338ca);
+}
+
+.imageUploadLabel input {
+  display: none;
+}
+
+.imagePreviewContainer {
+  position: relative;
+  margin-top: 1.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.imagePreview {
+  width: 8.375rem;
+  height: 8.375rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 0.125rem solid #ddd;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.imagePreview:hover {
+  transform: scale(1.05);
+}
+
+.removeButton {
+  position: absolute;
+  top: 0.625rem;
+  right: 0.625rem;
+  padding: 0.125rem 0.375rem;
+  border: none;
+  border-radius: 50%;
+  background-color: #ff4d4d;
+  color: white;
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: background-color 0.3s;
+}
+
+.removeButton:hover {
+  background-color: #ff0000;
+}

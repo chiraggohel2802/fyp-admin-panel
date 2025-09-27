@@ -1,0 +1,37 @@
+.formContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* column1 */
+.formContainer .formSection {
+  display: grid;
+  gap: 1rem;
+}
+
+.formContainer .formSection a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+.formContainer .formSection .heading {
+  text-align: center;
+  cursor: pointer;
+}
+
+.formContainer .formSection .logo {
+  text-align: center;
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+.formContainer .authForm {
+  width: 28.125rem;
+  background-color: #fff;
+  border-radius: 1.25rem;
+  box-shadow: 0 0 13px 0 rgba(82, 63, 105, 0.05);
+  padding: 1rem;
+  max-width: 31.25rem;
+}

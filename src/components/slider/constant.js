@@ -1,0 +1,37 @@
+export const formIntialValues = {
+  title: '',
+  description: '',
+  image: '',
+  mobileImage: '',
+  backgroundImage: '',
+  mobileBackgroundImage: '',
+  buttonText: '',
+  buttonLink: '',
+  sequenceNo: '',
+};
+
+export const SLIDER = {
+  HEADING: 'Slider',
+  SUB_HEADING: 'Slider List',
+  ADD_SLIDER_BUTTON_TEXT: 'Add Slider',
+  TITLE: 'Slider Details',
+  CANCEL_BUTTON: 'Cancel',
+  ADD: { BUTTON: 'Add Slider' },
+  EDIT: { BUTTON: 'Edit Slider' },
+  FORM: {
+    TITLE_LABEL: 'Title',
+    TITLE_PLACEHOLDER: 'Enter Title',
+    DESCRIPTION_LABEL: 'Description',
+    DESCRIPTION_PLACEHOLDER: 'Enter Description',
+    IMAGE_LABEL: 'Image',
+    MOBILE_IMAGE_LABEL: 'Mobile Image',
+    BACKGROUND_IMAGE_LABEL: 'Background Image',
+    BACKGROUND_MOBILE_IMAGE_LABEL: 'Mobile Background Image',
+    BUTTON_TEXT_LABEL: 'Button Text',
+    BUTTON_TEXT_PLACEHOLDER: 'Enter Button Text',
+    BUTTON_LINK_LABEL: 'Button Link',
+    BUTTON_LINK_PLACEHOLDER: 'Enter Button Link',
+    SEQUENCE_NO_LABEL: 'Sequence No',
+    SEQUENCE_NO_PLACEHOLDER: 'Enter Sequence Number',
+  },
+};

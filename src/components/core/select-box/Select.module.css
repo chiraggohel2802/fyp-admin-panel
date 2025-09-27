@@ -1,0 +1,33 @@
+.textFieldContainer {
+  display: grid;
+}
+
+.textFieldContainer .textFieldRow .prefix {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  padding: 0rem var(--icon-px);
+  display: flex;
+  align-items: center;
+}
+
+.textFieldContainer .textFieldRow .suffix {
+  display: flex;
+  align-items: center;
+  height: var(--input-height, 2.5rem);
+  padding: 0 var(--icon-px);
+  border-right: var(--input-default-state-border);
+  border-top: var(--input-default-state-border);
+  border-bottom: var(--input-default-state-border);
+  background: var(--pure-white, #fff);
+  border-radius: 0 0.375rem 0.375rem 0rem;
+  transition: border 0.15s;
+}
+
+.textFieldContainer .textFieldRow .suffix.hasSuffixOnClick {
+  cursor: pointer;
+}
+
+.reactSelectBox:focus {
+  border: var(--input-focus-state-border) !important;
+}

@@ -1,0 +1,15 @@
+.dataRowDataRow {
+  width: 45%;
+}
+
+.dataRowDataRowLabel {
+  font-weight: 500;
+  font-size: 1rem;
+  display: block;
+}
+
+.dataRowDataRowValue {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #878a99;
+}

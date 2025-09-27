@@ -1,0 +1,38 @@
+.content {
+  padding: 1.5625rem;
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.content .titleContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.875rem;
+  align-items: center;
+}
+
+.content .titleContainer .titles {
+  display: grid;
+  gap: 0.2rem;
+}
+
+.content .titleContainer .titles .title {
+  font-size: 1.3rem;
+  color: #28084b;
+  font-weight: 600;
+  margin: 0;
+}
+
+.content .titleContainer .titles .subTitle {
+  font-size: 0.8rem;
+  color: #28084b;
+  font-weight: 400;
+  margin: 0;
+}
+
+.content .titleContainer .outlineBtn {
+  width: max-content;
+}
