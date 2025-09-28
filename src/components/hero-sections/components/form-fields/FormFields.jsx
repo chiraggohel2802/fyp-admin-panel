@@ -85,6 +85,17 @@ const FormFields = () => {
           error={formikProps.errors.buttonLink}
         />
       </div>
+      <div className={formStyles.formGroup}>
+        <CoreComponent.TextArea
+          name="seoParagraph"
+          label={HERO_SECTION.FORM.SEO_PARAGRAPH_LABEL}
+          placeholder={HERO_SECTION.FORM.SEO_PARAGRAPH_PLACEHOLDER}
+          onChange={(e) => formikProps.handleChange(e)}
+          value={formikProps.values.seoParagraph}
+          error={formikProps.errors.seoParagraph}
+          rows={4}
+        />
+      </div>
     </>
   );
 };

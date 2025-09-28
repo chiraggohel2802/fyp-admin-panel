@@ -14,6 +14,16 @@ const FormFields = () => {
           className={formStyles.formGroupItem}
           text={`Username: ${formikProps.values.username}`}
         />
+        {/* SEO Paragraph Field */}
+        <CoreComponent.TextArea
+          name="seoParagraph"
+          label={THERAPIST.FORM.SEO_PARAGRAPH_LABEL}
+          placeholder={THERAPIST.FORM.SEO_PARAGRAPH_PLACEHOLDER}
+          onChange={(e) => formikProps.handleChange(e)}
+          value={formikProps.values.seoParagraph}
+          error={formikProps.errors.seoParagraph}
+          rows={4}
+        />
         <CoreComponent.TextField
           required
           fieldName="sequence"
@@ -75,6 +85,8 @@ const FormFields = () => {
           error={formikProps.errors.profile}
           isField={true}
         />
+        
+        
       </div>
     </>
   );

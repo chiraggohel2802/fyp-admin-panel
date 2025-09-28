@@ -3,10 +3,8 @@ import React from 'react';
 import Label from '../label/Label';
 import styles from './textArea.module.css';
 import Error from '../error/Error';
-import { useFormikContext } from 'formik';
 
 const TextArea = (props) => {
-  const { setFieldValue } = useFormikContext();
   const {
     label,
     name,
@@ -15,6 +13,7 @@ const TextArea = (props) => {
     error,
     required = false,
     hideErrorSpace = false,
+    onChange
   } = props;
 
   return (
@@ -26,9 +25,8 @@ const TextArea = (props) => {
           value={value}
           className={styles.textAreaInput}
           placeholder={placeholder}
-          onChange={(e) => {
-            setFieldValue(name, e.target.value);
-          }}
+          onChange={onChange}
+          rows={4}
         />
       </div>
 

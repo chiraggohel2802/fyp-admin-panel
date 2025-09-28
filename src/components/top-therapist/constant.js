@@ -7,6 +7,7 @@ export const formIntialValues = {
   rating: '',
   isVerified: false,
   profile: '',
+  seoParagraph: '',
 };
 
 export const therapistStatusLabels = [
@@ -37,5 +38,7 @@ export const THERAPIST = {
     REVIEW_COUNT_PLACEHOLDER: 'Enter Review Count',
     IS_VERIFIED_LABEL: 'Verified',
     PROFILE_PIC_LABEL: 'Profile Picture',
+    SEO_PARAGRAPH_LABEL: 'SEO Paragraph',
+    SEO_PARAGRAPH_PLACEHOLDER: 'Enter SEO paragraph for this therapist',
   },
 };

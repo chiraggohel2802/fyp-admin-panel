@@ -6,6 +6,7 @@ export const formIntialValues = {
   imageAltText: '',
   buttonText: '',
   buttonLink: '',
+  seoParagraph: '',
 };
 
 export const HERO_SECTION = {
@@ -29,5 +30,7 @@ export const HERO_SECTION = {
     BUTTON_TEXT_PLACEHOLDER: 'Enter Button Text',
     BUTTON_LINK_LABEL: 'Button Link',
     BUTTON_LINK_PLACEHOLDER: 'Enter Button Link',
+    SEO_PARAGRAPH_LABEL: 'SEO Paragraph',
+    SEO_PARAGRAPH_PLACEHOLDER: 'Enter SEO paragraph for this section',
   },
 };
