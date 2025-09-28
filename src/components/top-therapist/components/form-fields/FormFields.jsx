@@ -25,7 +25,6 @@ const FormFields = () => {
           rows={4}
         />
         <CoreComponent.TextField
-          required
           fieldName="sequence"
           label={THERAPIST.FORM.SEQUENCE_LABEL}
           placeholder={THERAPIST.FORM.SEQUENCE_PLACEHOLDER}
